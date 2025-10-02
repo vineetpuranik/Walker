@@ -24,10 +24,10 @@ impl Map {
                 let idx = map_idx(x, y);
                 match self.tiles[idx] {
                     TileType::Floor => {
-                        ctx.set(x, y, LIGHT_SEA, BLACK, to_cp437('#'));
+                        ctx.set(x, y, LIGHTSALMON, BLACK, to_cp437('#'));
                     }
                     TileType::Wall => {
-                        ctx.set(x, y, GREEN, BLACK, to_cp437('#'));
+                        ctx.set(x, y, BLUE3, BLACK, to_cp437('#'));
                     }
                 }
             }
